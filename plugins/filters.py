@@ -55,7 +55,7 @@ async def filter(client: Bot, message: Message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b> Here is the result for {message.text}</b>",
+                f"<b> මෙන්න ඔයා හොයන {message.text}</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -71,7 +71,7 @@ async def filter(client: Bot, message: Message):
         )
 
         await message.reply_text(
-                f"<b> Here is the result for {message.text}</b>",
+                f"<b> මෙන්න ඔයා හොයන {message.text}</b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -159,7 +159,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("HELP", callback_data="help_data"),
                     InlineKeyboardButton("ABOUT", callback_data="about_data")],
-                [InlineKeyboardButton("⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")]
+                [InlineKeyboardButton("🔰 JOIN OUR CHANNEL 🔰", url="https://t.me/SL_MEDIA_TECH_GRUOP")]
             ])
 
             await query.message.edit_text(
@@ -174,7 +174,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("BACK", callback_data="start_data"),
                     InlineKeyboardButton("ABOUT", callback_data="about_data")],
-                [InlineKeyboardButton("⭕️ SUPPORT ⭕️", url="https://t.me/TroJanzSupport")]
+                [InlineKeyboardButton("✨ SUPPORT 🇱🇰", url="https://t.me/SL_MEDIA_TECH_GRUOP")]
             ])
 
             await query.message.edit_text(
@@ -189,7 +189,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("BACK", callback_data="help_data"),
                     InlineKeyboardButton("START", callback_data="start_data")],
-                [InlineKeyboardButton("SOURCE CODE", url="https://github.com/TroJanzHEX/Auto-Filter-Bot")]
+                [InlineKeyboardButton("✨ Bot Owner 🤖", url="https://t.me/Akilawiduruwan")]
             ])
 
             await query.message.edit_text(
